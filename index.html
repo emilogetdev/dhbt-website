@@ -3,75 +3,81 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#0b0d12">
+<meta name="theme-color" content="#090b10">
 <title>DHBT – Die Hilfsbanditen</title>
-<meta name="description" content="DHBT – Die Hilfsbanditen. Eine Minecraft-Community auf OPSUCHT.NET rund um Teamwork, Bauen, Farmen und gemeinsame Projekte.">
+<meta name="description" content="DHBT – Die Hilfsbanditen: Minecraft-Community auf OPSUCHT.NET mit Aufgaben, Rollen und Clan-UI.">
 <style>
-:root{--bg:#090b10;--panel:#121722;--panel2:#171f2d;--gold:#f3b94f;--gold2:#ffe0a0;--text:#f4f5f7;--muted:#a7b0bf;--line:rgba(255,255,255,.09)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 70% 0%,#24202a 0,#0b0e15 42%,#090b10 78%);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
-a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 36px));margin:auto}
-header{position:sticky;top:0;z-index:10;background:rgba(9,11,16,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
-nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:.08em}.mark{width:40px;height:40px;border-radius:12px;background:linear-gradient(145deg,#ffe1a0,#b87920);color:#17120a;display:grid;place-items:center;font-weight:1000;box-shadow:0 8px 30px #d79a3533}.navlinks{display:flex;gap:22px;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:var(--gold2)}
-.hero{padding:78px 0 64px;display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:38px}.eyebrow{display:inline-flex;gap:8px;align-items:center;color:var(--gold2);font-size:.78rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}.dot{width:7px;height:7px;border-radius:50%;background:#62d69b;box-shadow:0 0 12px #62d69b}
-h1{font-size:clamp(2.8rem,7vw,5.6rem);line-height:.98;letter-spacing:-.065em;margin:20px 0}.gold{color:var(--gold)}.lead{color:#c1c8d3;font-size:1.08rem;max-width:600px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.btn{padding:12px 18px;border-radius:12px;font-weight:800;border:1px solid var(--line);display:inline-flex;align-items:center;justify-content:center;gap:8px}.primary{background:linear-gradient(135deg,#ffe0a0,#d99a36);color:#17120a;border:0}.secondary{background:#ffffff08}.heroimg{position:relative;border:1px solid #ffffff20;border-radius:24px;overflow:hidden;min-height:360px;box-shadow:0 28px 80px #0008}.heroimg img{width:100%;height:100%;min-height:360px;object-fit:cover;display:block;filter:saturate(.85)}.imgtag{position:absolute;left:16px;bottom:16px;background:#080b10d9;border:1px solid #ffffff22;padding:9px 13px;border-radius:10px;font-size:.78rem;color:#e8edf5}
-section{padding:54px 0}.sectionhead{max-width:650px;margin-bottom:26px}.kicker{color:var(--gold);font-size:.75rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase}.sectionhead h2{font-size:clamp(1.8rem,4vw,2.7rem);letter-spacing:-.04em;line-height:1.1;margin:9px 0}.sectionhead p{color:var(--muted);margin:0}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(145deg,#171e2a,#10151e);border:1px solid var(--line);border-radius:18px;padding:22px}.icon{width:42px;height:42px;border-radius:12px;background:#f3b94f18;color:var(--gold);display:grid;place-items:center;font-size:1.3rem;margin-bottom:14px}.card h3{margin:0 0 7px;font-size:1.1rem}.card p{margin:0;color:var(--muted);font-size:.94rem}
-.banner{border:1px solid #f3b94f38;background:linear-gradient(120deg,#f3b94f18,#171e2a 65%);border-radius:22px;padding:26px;display:flex;align-items:center;justify-content:space-between;gap:20px}.banner h3{margin:0 0 5px;font-size:1.35rem}.banner p{margin:0;color:var(--muted)}
-.gallery{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}.shot{border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--panel)}.shot img{width:100%;height:260px;object-fit:cover;display:block}.shot figcaption{padding:12px 15px;color:var(--muted);font-size:.82rem}
-.notice{border-left:3px solid var(--gold);padding:12px 16px;background:#f3b94f0d;color:#cbd2dc;border-radius:0 12px 12px 0;font-size:.9rem}
-footer{padding:32px 0 44px;border-top:1px solid var(--line);color:var(--muted);font-size:.86rem}.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
-@media(max-width:760px){.navlinks{gap:12px;font-size:.82rem}.hero{grid-template-columns:1fr;padding:54px 0 34px}.heroimg,.heroimg img{min-height:250px}.grid{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.shot img{height:220px}.banner{align-items:flex-start;flex-direction:column}nav{height:64px}.brand{font-size:.9rem}}
-@media(max-width:430px){.navlinks a:nth-child(2){display:none}.wrap{width:min(100% - 28px,1120px)}}
+:root{--bg:#090b10;--panel:#111722;--panel2:#171f2c;--gold:#e9b653;--gold2:#ffe2a1;--text:#f5f6f8;--muted:#aeb7c5;--line:#ffffff18}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% -10%,#46331d 0,transparent 36%),linear-gradient(180deg,#0b0e14,#090b10 60%);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1100px,calc(100% - 36px));margin:auto}
+header{position:sticky;top:0;z-index:5;background:#090b10dc;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}nav{height:70px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{display:flex;align-items:center;gap:11px;font-weight:950;letter-spacing:.1em}.crest{width:39px;height:39px;border-radius:12px;background:linear-gradient(145deg,#ffe4a9,#b77b26);color:#1a1409;display:grid;place-items:center;font-weight:1000;box-shadow:0 8px 26px #e9b65330}.links{display:flex;gap:22px;color:var(--muted);font-size:.9rem}.links a:hover{color:var(--gold2)}
+.hero{padding:88px 0 65px;display:grid;grid-template-columns:1.15fr .85fr;gap:34px;align-items:center}.tag{color:var(--gold2);font-size:.75rem;font-weight:900;letter-spacing:.2em;text-transform:uppercase}.tag:before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:#7ce0a5;margin:0 9px 1px 0;box-shadow:0 0 12px #7ce0a5}h1{font-size:clamp(3rem,7vw,5.7rem);line-height:.96;letter-spacing:-.07em;margin:18px 0}.gold{color:var(--gold)}.lead{max-width:590px;color:#c1c9d5;font-size:1.08rem}.actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:27px}.btn{padding:12px 17px;border-radius:11px;font-weight:850;border:1px solid var(--line);display:inline-flex;align-items:center;gap:8px}.primary{background:linear-gradient(135deg,#ffe2a1,#d99c3b);color:#171108;border:0}.ghost{background:#ffffff08}.hero-panel{padding:26px;border:1px solid #e9b65345;border-radius:22px;background:linear-gradient(145deg,#241d13,#111722 70%);box-shadow:0 24px 70px #0006}.panel-top{display:flex;align-items:center;justify-content:space-between;color:var(--muted);font-size:.78rem}.status{color:#9be3b4}.hero-panel h2{font-size:1.65rem;line-height:1.2;margin:28px 0 8px}.hero-panel p{color:var(--muted);margin:0}.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:23px}.mini{padding:13px;border:1px solid var(--line);border-radius:12px;background:#ffffff06}.mini b{display:block;color:var(--gold2);font-size:1.1rem}.mini span{color:var(--muted);font-size:.78rem}
+section{padding:53px 0}.head{max-width:660px;margin-bottom:25px}.eyebrow{font-size:.72rem;letter-spacing:.18em;color:var(--gold);font-weight:900;text-transform:uppercase}.head h2{font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.1;letter-spacing:-.045em;margin:9px 0}.head p{color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{padding:22px;border:1px solid var(--line);border-radius:17px;background:linear-gradient(145deg,#171f2c,#10151e)}.ico{width:42px;height:42px;border-radius:12px;background:#e9b65318;color:var(--gold2);display:grid;place-items:center;font-size:1.25rem;margin-bottom:14px}.card h3{margin:0 0 6px}.card p{color:var(--muted);font-size:.93rem;margin:0}.feature{display:grid;grid-template-columns:.8fr 1.2fr;gap:24px;align-items:stretch}.feature-intro{padding:27px;border-radius:19px;background:linear-gradient(145deg,#332719,#171d28);border:1px solid #e9b65338}.feature-intro h3{font-size:1.6rem;line-height:1.2;margin:12px 0}.feature-intro p{color:var(--muted)}.feature-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}.feature-item{padding:17px;border:1px solid var(--line);border-radius:14px;background:#ffffff05}.feature-item b{display:block;margin-bottom:4px}.feature-item span{font-size:.88rem;color:var(--muted)}
+.callout{padding:28px;border:1px solid #e9b65342;border-radius:20px;background:linear-gradient(110deg,#e9b65318,#171f2c 65%);display:flex;align-items:center;justify-content:space-between;gap:18px}.callout h3{font-size:1.35rem;margin:0 0 4px}.callout p{color:var(--muted);margin:0}.note{margin-top:18px;padding:12px 15px;border-left:3px solid var(--gold);border-radius:0 10px 10px 0;background:#e9b6530c;color:#c4ccd7;font-size:.85rem}
+footer{border-top:1px solid var(--line);padding:28px 0 38px;color:var(--muted);font-size:.83rem}.foot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding:58px 0 40px}.grid{grid-template-columns:1fr}.feature{grid-template-columns:1fr}.links{gap:12px;font-size:.8rem}.callout{align-items:flex-start;flex-direction:column}.feature-list{grid-template-columns:1fr 1fr}}
+@media(max-width:430px){.wrap{width:calc(100% - 28px)}.links a:nth-child(2){display:none}.feature-list{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <header><div class="wrap"><nav>
-<a class="brand" href="#start"><span class="mark">DH</span><span>DHBT <span class="gold">COMMUNITY</span></span></a>
-<div class="navlinks"><a href="#about">Über uns</a><a href="#bereiche">Bereiche</a><a href="#bilder">Galerie</a><a href="#kontakt">Kontakt</a></div>
+<a class="brand" href="#start"><span class="crest">DH</span><span>DHBT <span class="gold">CLAN</span></span></a>
+<div class="links"><a href="#clan">Clan</a><a href="#rollen">Bereiche</a><a href="#ui">Clan-UI</a><a href="#kontakt">Links</a></div>
 </nav></div></header>
 <main>
 <div class="wrap hero" id="start">
 <div>
-<div class="eyebrow"><span class="dot"></span> MINECRAFT COMMUNITY · OPSUCHT</div>
-<h1>Zusammen<br><span class="gold">mehr erreichen.</span></h1>
-<p class="lead">Willkommen bei DHBT – Die Hilfsbanditen. Wir bringen Spieler zusammen, die gerne bauen, farmen, handeln und gemeinsame Projekte auf OPSUCHT.NET verwirklichen.</p>
-<div class="actions"><a class="btn primary" href="#bereiche">Clan entdecken <span>↗</span></a><a class="btn secondary" href="#kontakt">Kontakt & Community</a></div>
+<div class="tag">Die Hilfsbanditen · Minecraft Community</div>
+<h1>Ein Clan.<br><span class="gold">Ein Team.</span></h1>
+<p class="lead">Willkommen bei DHBT – Die Hilfsbanditen. Hier stehen gemeinsame Projekte, Aufgaben und der Zusammenhalt der Community im Mittelpunkt.</p>
+<div class="actions"><a class="btn primary" href="https://dhbt-clan.com" target="_blank" rel="noopener">DHBT-Website öffnen ↗</a><a class="btn ghost" href="#rollen">Clan entdecken ↓</a></div>
 </div>
-<div class="heroimg"><img src="https://image.jimcdn.com/app/cms/image/transf/dimension%3D1040x10000%3Aformat%3Dpng/path/s7fbd53eaea026ab6/image/ic56a18a1ae99e635/version/1509121553/image.png" alt="Beispiel einer großen Minecraft-Stadt mit modernen Gebäuden"><div class="imgtag">Gemeinsam bauen. Gemeinsam wachsen.</div></div>
+<aside class="hero-panel">
+<div class="panel-top"><span>DHBT COMMUNITY</span><span class="status">● ONLINE-INFO</span></div>
+<h2>Gemeinsam etwas<br><span class="gold">auf die Beine stellen.</span></h2>
+<p>Aufträge erledigen, Projekte unterstützen und den eigenen Fortschritt im Clan verfolgen.</p>
+<div class="mini-grid">
+<div class="mini"><b>XP & Level</b><span>Fortschritt im Clan</span></div>
+<div class="mini"><b>Missionen</b><span>Aufgaben erledigen</span></div>
+<div class="mini"><b>Belohnungen</b><span>Erfolge sammeln</span></div>
+<div class="mini"><b>Community</b><span>Zusammen spielen</span></div>
 </div>
-<div class="wrap">
-<div class="notice">Diese Seite ist eine Community-Präsentation von DHBT. Sie ist nicht die offizielle Website oder ein Angebot des OPSUCHT-Serverteams. Die gezeigten Minecraft-Bilder sind illustrative Beispielbilder und keine bestätigten DHBT-Projekt-Screenshots.</div>
+</aside>
 </div>
-<section id="about"><div class="wrap">
-<div class="sectionhead"><div class="kicker">Wer wir sind</div><h2>Die Hilfsbanditen – <span class="gold">DHBT</span></h2><p>Ein Clan für gemeinsames Spielen und Projekte. Ob du lieber Ressourcen sammelst, große Bauwerke planst oder anderen bei ihren Vorhaben hilfst – Teamwork steht im Mittelpunkt.</p></div>
+<section id="clan"><div class="wrap">
+<div class="head"><div class="eyebrow">Der Clan</div><h2>DHBT – Die <span class="gold">Hilfsbanditen</span></h2><p>Eine Minecraft-Community auf OPSUCHT.NET. Unterschiedliche Aufgabenbereiche bringen Spieler zusammen und helfen dabei, gemeinsame Vorhaben umzusetzen.</p></div>
 <div class="grid">
-<article class="card"><div class="icon">🤝</div><h3>Zusammenhalt</h3><p>Wir unterstützen uns gegenseitig, tauschen Wissen aus und packen gemeinsame Aufgaben an.</p></article>
-<article class="card"><div class="icon">🏗️</div><h3>Projekte</h3><p>Von Bauvorhaben bis Kartenprojekten: Ideen werden gemeinsam geplant und umgesetzt.</p></article>
-<article class="card"><div class="icon">⛏️</div><h3>OPSUCHT</h3><p>Unsere Community spielt auf dem Minecraft-CityBuild-Netzwerk OPSUCHT.NET.</p></article>
+<article class="card"><div class="ico">🤝</div><h3>Teamwork</h3><p>Mitglieder unterstützen sich gegenseitig und arbeiten gemeinsam an Aufgaben und Projekten.</p></article>
+<article class="card"><div class="ico">🎯</div><h3>Aufträge</h3><p>Aufgaben geben Orientierung und bieten Möglichkeiten, sich in der Community einzubringen.</p></article>
+<article class="card"><div class="ico">🏆</div><h3>Fortschritt</h3><p>Das DHBT-User-Interface bündelt wichtige Informationen zum persönlichen Clan-Fortschritt.</p></article>
 </div>
 </div></section>
-<section id="bereiche"><div class="wrap">
-<div class="sectionhead"><div class="kicker">Was wir machen</div><h2>Jede Stärke zählt.</h2><p>Die vorgestellten Aufgabenbereiche orientieren sich an den DHBT-Informationen.</p></div>
+<section id="rollen"><div class="wrap">
+<div class="head"><div class="eyebrow">Aufgabenbereiche</div><h2>Finde deinen <span class="gold">Platz im Team.</span></h2><p>Die bekannten DHBT-Bereiche und ihre Aufgaben auf einen Blick.</p></div>
 <div class="grid">
-<article class="card"><div class="icon">🌾</div><h3>Farmer</h3><p>Ressourcen sammeln und Farm-Aufträge unterstützen.</p></article>
-<article class="card"><div class="icon">🧱</div><h3>Builder</h3><p>Bauideen entwickeln, Grundstücke gestalten und Bauprojekte umsetzen.</p></article>
-<article class="card"><div class="icon">🗺️</div><h3>Kartenbauer</h3><p>Kreative Map-Art- und Kartenbau-Projekte planen und gestalten.</p></article>
-<article class="card"><div class="icon">🏡</div><h3>Makler</h3><p>Bei Grundstücken, Angeboten und Vermittlungen unterstützen.</p></article>
-<article class="card"><div class="icon">🎯</div><h3>Aufträge</h3><p>Aufgaben koordinieren und den Fortschritt gemeinsamer Projekte verfolgen.</p></article>
-<article class="card"><div class="icon">⭐</div><h3>Level & XP</h3><p>Das DHBT-UI bietet Fortschritt mit Leveln, XP, Missionen und Belohnungen.</p></article>
+<article class="card"><div class="ico">🌾</div><h3>Farmer</h3><p>Ressourcen farmen und bei Farm-Aufträgen mithelfen.</p></article>
+<article class="card"><div class="ico">🧱</div><h3>Builder</h3><p>Bauwerke gestalten und gemeinsame Bauprojekte umsetzen.</p></article>
+<article class="card"><div class="ico">🗺️</div><h3>Kartenbauer</h3><p>Karten- und Map-Art-Projekte kreativ planen und gestalten.</p></article>
+<article class="card"><div class="ico">🏡</div><h3>Makler</h3><p>Bei Angeboten, Grundstücken und Vermittlungen unterstützen.</p></article>
+<article class="card"><div class="ico">📋</div><h3>Aufträge</h3><p>Gemeinsame Aufgaben übernehmen und den Überblick behalten.</p></article>
+<article class="card"><div class="ico">💬</div><h3>Community</h3><p>Informationen austauschen und mit anderen Clan-Mitgliedern zusammenarbeiten.</p></article>
 </div>
 </div></section>
-<section id="bilder"><div class="wrap">
-<div class="sectionhead"><div class="kicker">Einblicke</div><h2>Minecraft-Bauwelten.</h2><p>Beispielbilder als Platzhalter für eure eigenen DHBT-Screenshots.</p></div>
-<div class="gallery">
-<figure class="shot"><img src="https://static.planetminecraft.com/files/image/minecraft/project/2025/698/18552619-vsmall_xl.webp" alt="Minecraft-Stadt mit Hochhäusern und Fluss"><figcaption>CityBuild-Inspiration · Beispielbild, nicht DHBT-eigen</figcaption></figure>
-<figure class="shot"><img src="https://unlimitedworld.de/attachments/mittelalterstadt-jpg.56895/" alt="Minecraft-Mittelalterstadt mit Burg und Bergen"><figcaption>Bau-Inspiration · Beispielbild, nicht DHBT-eigen</figcaption></figure>
+<section id="ui"><div class="wrap">
+<div class="head"><div class="eyebrow">Neues DHBT User Interface</div><h2>Dein Fortschritt. <span class="gold">Alles im Blick.</span></h2><p>Das neue User-Interface dient als zentrale Anlaufstelle für Profile und wichtige Clan-Systeme.</p></div>
+<div class="feature">
+<div class="feature-intro"><div class="eyebrow">Clan-System</div><h3>Mehr Überblick über deine Aktivitäten.</h3><p>Verfolge deinen Fortschritt, erledige Missionen und sammle Belohnungen über die Clan-Systeme.</p></div>
+<div class="feature-list">
+<div class="feature-item"><b>🎖️ Level- & XP-System</b><span>XP sammeln und im Level aufsteigen.</span></div>
+<div class="feature-item"><b>📈 Fortschritt</b><span>Deine Entwicklung im Blick behalten.</span></div>
+<div class="feature-item"><b>🧭 Missionen</b><span>Aufgaben entdecken und erledigen.</span></div>
+<div class="feature-item"><b>🎁 Belohnungen</b><span>Erfolge und Fortschritte nutzen.</span></div>
+</div>
 </div>
 </div></section>
 <section id="kontakt"><div class="wrap">
-<div class="banner"><div><h3>DHBT – Die Hilfsbanditen</h3><p>Spiele mit uns auf OPSUCHT.NET und entdecke die Community.</p></div><a class="btn primary" href="https://wiki.opsucht.net/" target="_blank" rel="noopener">OPSUCHT Wiki ansehen ↗</a></div>
+<div class="callout"><div><h3>Mehr über DHBT erfahren?</h3><p>Besuche die DHBT-Website und informiere dich direkt beim Clan.</p></div><a class="btn primary" href="https://dhbt-clan.com" target="_blank" rel="noopener">dhbt-clan.com öffnen ↗</a></div>
+<div class="note">Diese GitHub-Seite ist eine ergänzende Community-Präsentation und nicht automatisch die offizielle DHBT-Website. Clan-Informationen hier beruhen auf bisher bekannten Angaben. Für verbindliche und aktuelle Informationen gilt die offizielle DHBT-Seite.</div>
 </div></section>
 </main>
-<footer><div class="wrap foot"><span>© DHBT – Die Hilfsbanditen · Community-Seite</span><span>OPSUCHT.NET wird unabhängig betrieben. Keine offizielle Verbindung zum Serverteam.</span></div></footer>
-</body>
-</html>
+<footer><div class="wrap foot"><span>DHBT – Die Hilfsbanditen · Community-Präsentation</span><span><a href="https://dhbt-clan.com" target="_blank" rel="noopener">Offizielle DHBT-Seite ↗</a> · <a href="https://wiki.opsucht.net/" target="_blank" rel="noopener">OPSUCHT Wiki ↗</a></span></div></footer>
+</body></html>
